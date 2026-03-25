@@ -10,6 +10,11 @@ export function TrackGrid({ compact = false }: { compact?: boolean }) {
       {list.map((song, index) => (
         <Reveal key={song.id} className="track-card media-card" delay={index * 90}>
           <div className={`track-card-glow bg-gradient-to-r ${song.accent}`} />
+          <div className="track-visual">
+            <video autoPlay loop muted playsInline poster={song.visualPoster}>
+              <source src={song.visualSrc} type="video/mp4" />
+            </video>
+          </div>
           <div className="track-card-top">
             <p className="eyebrow">{song.genre}</p>
             <span>{song.runtime}</span>
@@ -17,7 +22,7 @@ export function TrackGrid({ compact = false }: { compact?: boolean }) {
           <h3>{song.title}</h3>
           <p>{song.description}</p>
           <div className="track-mood">{song.mood}</div>
-          <audio controls preload="none" src={song.audioSrc} className="track-player" />
+          <audio controls preload="none" src={song.audioSrc} className="track-player" aria-label={`${song.title} audio`} />
           <div className="track-actions">
             <a className="pill-button" href={song.downloadSrc} download>
               Download

@@ -25,6 +25,8 @@ export type Song = {
   audioSrc: string;
   downloadSrc: string;
   lyricsSrc: string;
+  visualSrc: string;
+  visualPoster: string;
   accent: string;
 };
 
@@ -37,7 +39,7 @@ export type Visual = {
   type: "video" | "image";
 };
 
-export const siteName = "JCBK Signal Arcade";
+export const siteName = "Jacob Kocsis Signal Arcade";
 
 export const navItems: NavItem[] = [
   { href: "/", label: "Home" },
@@ -51,16 +53,16 @@ export const navItems: NavItem[] = [
 
 export const heroMetrics: Metric[] = [
   { label: "Original tracks", value: "5 x 60-second drops" },
-  { label: "Entry ritual", value: "Playable splash arcade gate" },
+  { label: "Entry ritual", value: "Playable touch-ready arcade gate" },
   { label: "Capture path", value: "Live interest + download funnel" }
 ];
 
 export const introTracks: AudioTrack[] = [
   {
     id: "intro-voice",
-    label: "Intro voice",
+    label: "Jacob welcome",
     src: "/media/voice/intro-voice.mp3",
-    description: "The opening voice pass that frames the whole experience before the first song hits."
+    description: "A brighter voice welcome that frames the whole experience before the first song hits."
   },
   {
     id: "site-mix",
@@ -82,6 +84,8 @@ export const songs: Song[] = [
     audioSrc: "/media/tracks/hip-hop-minute.mp3",
     downloadSrc: "/media/tracks/hip-hop-minute.mp3",
     lyricsSrc: "/media/tracks/hip-hop-minute-lyrics.txt",
+    visualSrc: "/media/song-visuals/hip-hop-minute.mp4",
+    visualPoster: "/media/song-visuals/hip-hop-minute.png",
     accent: "from-cyan-400 via-sky-500 to-blue-600"
   },
   {
@@ -95,6 +99,8 @@ export const songs: Song[] = [
     audioSrc: "/media/tracks/rnb-minute.mp3",
     downloadSrc: "/media/tracks/rnb-minute.mp3",
     lyricsSrc: "/media/tracks/rnb-minute-lyrics.txt",
+    visualSrc: "/media/song-visuals/rnb-minute.mp4",
+    visualPoster: "/media/song-visuals/rnb-minute.png",
     accent: "from-fuchsia-500 via-pink-500 to-rose-500"
   },
   {
@@ -108,6 +114,8 @@ export const songs: Song[] = [
     audioSrc: "/media/tracks/rock-minute.mp3",
     downloadSrc: "/media/tracks/rock-minute.mp3",
     lyricsSrc: "/media/tracks/rock-minute-lyrics.txt",
+    visualSrc: "/media/song-visuals/rock-minute.mp4",
+    visualPoster: "/media/song-visuals/rock-minute.png",
     accent: "from-orange-400 via-red-500 to-amber-500"
   },
   {
@@ -121,6 +129,8 @@ export const songs: Song[] = [
     audioSrc: "/media/tracks/eighties-electric-minute.mp3",
     downloadSrc: "/media/tracks/eighties-electric-minute.mp3",
     lyricsSrc: "/media/tracks/eighties-electric-minute-lyrics.txt",
+    visualSrc: "/media/song-visuals/eighties-electric-minute.mp4",
+    visualPoster: "/media/song-visuals/eighties-electric-minute.png",
     accent: "from-violet-500 via-indigo-500 to-cyan-400"
   },
   {
@@ -134,6 +144,8 @@ export const songs: Song[] = [
     audioSrc: "/media/tracks/soul-pop-minute.mp3",
     downloadSrc: "/media/tracks/soul-pop-minute.mp3",
     lyricsSrc: "/media/tracks/soul-pop-minute-lyrics.txt",
+    visualSrc: "/media/song-visuals/soul-pop-minute.mp4",
+    visualPoster: "/media/song-visuals/soul-pop-minute.png",
     accent: "from-lime-300 via-emerald-400 to-teal-500"
   }
 ];
@@ -141,50 +153,49 @@ export const songs: Song[] = [
 export const featuredVisuals: Visual[] = [
   {
     id: "hero-loop",
-    title: "Launch hero",
-    summary: "The opening loop that sets the whole mood before the first click.",
+    title: "Jacob launch",
+    summary: "The opening hero pass built around a brighter music-and-arcade stage world.",
     src: "/media/hero/hero-loop.mp4",
     poster: "/media/hero/hero-poster.png",
     type: "video"
   },
   {
-    id: "snake-rise",
-    title: "Arcade serpent",
-    summary: "The symbol motion pass behind the arcade section and hover states.",
+    id: "arcade-surge",
+    title: "Arcade surge",
+    summary: "A fresh serpent-and-console motion pass for the arcade and track routes.",
     src: "/media/derived/serpent-rise.mp4",
     poster: "/media/fusion/arcade-serpent.png",
     type: "video"
   },
   {
     id: "logo-orbit",
-    title: "Brand orbit",
-    summary: "A slow orbit around the logo mark for premium pause moments and footer close.",
+    title: "Signal orbit",
+    summary: "A slow orbit around the new mark for premium pause moments and the footer close.",
     src: "/media/derived/logo-orbit.mp4",
     poster: "/media/fusion/logo-mark.png",
     type: "video"
   },
   {
-    id: "portal-drift",
-    title: "Frequency portal",
-    summary: "A luminous portal pass for the visuals and downloads routes.",
+    id: "pulse-tunnel",
+    title: "Pulse tunnel",
+    summary: "A luminous gaming-and-music tunnel pass for the visuals and downloads routes.",
     src: "/media/derived/portal-drift.mp4",
     poster: "/media/fusion/frequency-portal.png",
     type: "video"
   },
   {
-    id: "night-stage",
-    title: "Night stage",
-    summary: "A stage-ready still for the story route and hero fallbacks.",
+    id: "voltage-stage",
+    title: "Voltage stage",
+    summary: "A fresh still built for the experience and contact routes.",
     src: "/media/fusion/night-stage.png",
     type: "image"
   },
   {
-    id: "neon-particles",
-    title: "Particle rain",
-    summary: "A stock neon field used to add motion depth without drowning the content.",
-    src: "/media/stock/neon-particles.mp4",
-    poster: "/media/stock/neon-particles-still.jpg",
-    type: "video"
+    id: "control-room",
+    title: "Control room",
+    summary: "A fresh still built around Jacob's brighter command booth and release vibe.",
+    src: "/media/fusion/control-room.png",
+    type: "image"
   }
 ];
 
@@ -196,7 +207,7 @@ export const bundleFiles = [
   },
   {
     label: "Logo and hero kit",
-    href: "/media/downloads/jcbk-brand-kit.zip",
+    href: "/media/downloads/jacob-brand-kit.zip",
     note: "Logo mark, posters, and the hero loop for review or handoff."
   }
 ];

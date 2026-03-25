@@ -14,7 +14,11 @@ export default function HomePage() {
     <>
       <SplashGate />
       <section className="hero-section">
-        <HeroVideo src={heroVisual.src} poster={heroVisual.poster || "/media/hero/hero-poster.png"} label="JCBK hero video" />
+        <HeroVideo
+          src={heroVisual.src}
+          poster={heroVisual.poster || "/media/hero/hero-poster.png"}
+          label="Jacob Kocsis Signal Arcade hero video"
+        />
         <div className="hero-copy">
           <Reveal className="hero-kicker">
             <span className="eyebrow">Music flagship</span>
@@ -24,8 +28,8 @@ export default function HomePage() {
             Press play on a <AnimatedWord text="brighter" /> frequency.
           </Reveal>
           <Reveal as="p" className="hero-summary" delay={160}>
-            This is a vibrant music world built around five original one-minute drops, a splash-gate arcade,
-            premium video motion, and a download flow that keeps the experience moving.
+            This is a vibrant Jacob Kocsis music world built around five original one-minute drops, a touch-ready
+            splash arcade, premium motion, and a download flow that keeps the experience moving.
           </Reveal>
           <Reveal className="hero-actions" delay={220}>
             <Link href="/tracks" className="primary-button">
@@ -67,8 +71,8 @@ export default function HomePage() {
           <p className="eyebrow">Visual rhythm</p>
           <h2>Videos keep the page alive before the listener even presses play.</h2>
           <p>
-            The site layers hero motion, section loops, hover animation, and a live game gate so every scroll step
-            keeps a pulse without drowning the songs.
+            The site layers fresh hero motion, section loops, hover animation, and a live game gate so every scroll
+            step keeps a pulse without drowning the songs.
           </p>
           <Link href="/visuals" className="ghost-button">
             See the motion system
@@ -81,8 +85,9 @@ export default function HomePage() {
           <p className="eyebrow">Arcade entry</p>
           <h2>The first touch feels like crossing a threshold, not loading a brochure.</h2>
           <p>
-            The splash page gives visitors something to do, the audio dock gives them something to hear, and the
-            tracks page gives them a reason to stay longer than a normal promo site.
+            The splash page now plays like a real mini-game with touch controls, sound effects, and slow-motion
+            power-ups. The audio dock gives visitors something to hear, and the tracks page gives them a reason to
+            stay longer than a normal promo site.
           </p>
           <Link href="/downloads" className="primary-button">
             Grab the bundle

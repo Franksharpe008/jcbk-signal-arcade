@@ -17,7 +17,7 @@ export async function POST(request: Request) {
 
     const apiKey = process.env.BREVO_API_KEY;
     const fromEmail = process.env.BREVO_FROM_EMAIL;
-    const fromName = process.env.BREVO_FROM_NAME || "JCBK Signal Arcade";
+    const fromName = process.env.BREVO_FROM_NAME || "Jacob Kocsis Signal Arcade";
     const toList = String(process.env.LEAD_FORWARD_TO || defaultRecipients)
       .split(",")
       .map((value) => value.trim())
@@ -39,7 +39,7 @@ export async function POST(request: Request) {
         sender: { email: fromEmail, name: fromName },
         to: toList,
         replyTo: { email, name },
-        subject: `New JCBK Signal Arcade lead: ${name}`,
+        subject: `New Jacob Kocsis Signal Arcade lead: ${name}`,
         textContent: [
           `Name: ${name}`,
           `Email: ${email}`,

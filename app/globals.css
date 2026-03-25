@@ -157,7 +157,10 @@ video {
   border-radius: 1rem;
   background:
     radial-gradient(circle at 30% 35%, rgba(255, 255, 255, 0.95), transparent 24%),
-    linear-gradient(135deg, var(--cyan), var(--violet) 52%, var(--pink));
+    linear-gradient(135deg, rgba(5, 8, 22, 0.16), rgba(5, 8, 22, 0.16)),
+    url("/media/fusion/logo-mark.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 24px rgba(85, 144, 255, 0.4);
 }
 
@@ -437,9 +440,17 @@ video {
   grid-template-columns: 1fr 1fr;
 }
 
+.page-media-slab {
+  padding: 0.9rem;
+  border-radius: 1.6rem;
+}
+
 .section-video-card,
 .visual-card video,
-.visual-card img {
+.visual-card img,
+.page-media-slab video,
+.page-media-slab img,
+.site-footer-media video {
   border-radius: 1.35rem;
   overflow: hidden;
   min-height: 20rem;
@@ -465,6 +476,14 @@ video {
   display: grid;
   gap: 0.9rem;
   border-radius: 1.5rem;
+}
+
+.track-visual video {
+  width: 100%;
+  min-height: 12rem;
+  border-radius: 1.1rem;
+  object-fit: cover;
+  border: 1px solid rgba(115, 245, 255, 0.14);
 }
 
 .track-card-top,
@@ -499,6 +518,8 @@ video {
 .snake-card {
   border-radius: 1.5rem;
   padding: 1rem;
+  display: grid;
+  gap: 0.95rem;
 }
 
 .snake-card canvas {
@@ -510,6 +531,39 @@ video {
 
 .snake-card.is-compact {
   width: min(100%, 28rem);
+}
+
+.snake-pad {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.snake-pad-button {
+  border-radius: 1rem;
+  border: 1px solid rgba(115, 245, 255, 0.18);
+  background: rgba(10, 16, 38, 0.62);
+  color: var(--text);
+  padding: 0.8rem 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.74rem;
+}
+
+.snake-pad-up {
+  grid-column: 2;
+}
+
+.snake-pad-left {
+  grid-column: 1;
+}
+
+.snake-pad-right {
+  grid-column: 3;
+}
+
+.snake-pad-down {
+  grid-column: 2;
 }
 
 .snake-stats,
@@ -526,9 +580,28 @@ video {
 
 .visual-grid,
 .download-grid,
-.pillar-grid {
+.pillar-grid,
+.feature-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-spotlight {
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+}
+
+.feature-list {
+  gap: 0.9rem;
+}
+
+.feature-bullet {
+  padding: 1rem;
+  border-radius: 1.1rem;
+  border: 1px solid rgba(115, 245, 255, 0.14);
+  background: rgba(8, 14, 34, 0.58);
+  color: var(--muted);
+  line-height: 1.6;
 }
 
 .lead-form {
@@ -586,6 +659,18 @@ video {
   gap: 1.4rem;
 }
 
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.2rem;
+  align-items: stretch;
+}
+
+.site-footer-media {
+  padding: 0.8rem;
+  border-radius: 1.7rem;
+}
+
 .footer-links a {
   padding: 0.9rem 1.1rem;
   border-radius: 999px;
@@ -625,6 +710,11 @@ video {
 .audio-chip.is-active {
   color: var(--text);
   border-color: rgba(115, 245, 255, 0.45);
+}
+
+.audio-dock-controls {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .audio-dock.is-open {
@@ -779,6 +869,8 @@ video {
   .visual-grid,
   .download-grid,
   .pillar-grid,
+  .site-footer-grid,
+  .feature-list,
   .track-grid.is-compact,
   .track-grid {
     grid-template-columns: 1fr;
@@ -820,6 +912,17 @@ video {
 
   .hero-title {
     font-size: clamp(2.5rem, 14vw, 4.4rem);
+  }
+
+  .snake-actions,
+  .snake-head,
+  .snake-stats {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .snake-pad-button {
+    min-height: 3.1rem;
   }
 }
 

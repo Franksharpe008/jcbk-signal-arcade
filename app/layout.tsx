@@ -22,9 +22,9 @@ const plex = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "JCBK Signal Arcade",
+  title: "Jacob Kocsis Signal Arcade",
   description:
-    "Five original one-minute records inside a vibrant music flagship with arcade energy, animated visuals, video, and direct downloads."
+    "Five original one-minute records inside a vibrant Jacob Kocsis music flagship with a touch-ready arcade gate, animated visuals, video, and direct downloads."
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

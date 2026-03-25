@@ -1,6 +1,12 @@
 import { Reveal } from "@/components/reveal";
 import { SnakeArcade } from "@/components/snake-arcade";
 
+const arcadeNotes = [
+  "Touch, swipe, arrows, and WASD all work.",
+  "Cyan power-ups trigger slow motion so the run gets tactical.",
+  "The mini-game now belongs on mobile, not just desktop."
+];
+
 export default function ArcadePage() {
   return (
     <section className="page-shell">
@@ -12,7 +18,22 @@ export default function ArcadePage() {
           authored instead of generic.
         </p>
       </Reveal>
-      <SnakeArcade />
+      <div className="split-section">
+        <Reveal>
+          <SnakeArcade />
+        </Reveal>
+        <Reveal className="media-card page-spotlight" delay={100}>
+          <p className="eyebrow">Arcade upgrades</p>
+          <h2>The gate now feels playable, portable, and bright.</h2>
+          <div className="feature-list">
+            {arcadeNotes.map((item) => (
+              <div key={item} className="feature-bullet">
+                {item}
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
     </section>
   );
 }

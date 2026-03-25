@@ -1,4 +1,5 @@
 import { Reveal } from "@/components/reveal";
+import { featuredVisuals } from "@/lib/site";
 
 const pillars = [
   {
@@ -16,6 +17,8 @@ const pillars = [
 ];
 
 export default function ExperiencePage() {
+  const visual = featuredVisuals[3];
+
   return (
     <section className="page-shell">
       <Reveal className="page-intro">
@@ -26,6 +29,21 @@ export default function ExperiencePage() {
           pack feel valuable before anyone asks what tools touched it.
         </p>
       </Reveal>
+      <div className="split-section">
+        <Reveal className="media-card page-media-slab">
+          <video autoPlay loop muted playsInline poster={visual.poster}>
+            <source src={visual.src} type="video/mp4" />
+          </video>
+        </Reveal>
+        <Reveal className="section-copy" delay={100}>
+          <p className="eyebrow">Brighter motion</p>
+          <h2>Every route should feel like part of the same world, not a dead-end branch.</h2>
+          <p>
+            The experience route now leans on fresh motion and cleaner pacing so the site feels like a living release
+            environment from splash to contact.
+          </p>
+        </Reveal>
+      </div>
       <div className="pillar-grid">
         {pillars.map((pillar, index) => (
           <Reveal key={pillar.title} className="media-card pillar-card" delay={index * 90}>

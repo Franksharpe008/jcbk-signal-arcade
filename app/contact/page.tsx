@@ -1,7 +1,10 @@
 import { LeadForm } from "@/components/lead-form";
 import { Reveal } from "@/components/reveal";
+import { featuredVisuals } from "@/lib/site";
 
 export default function ContactPage() {
+  const visual = featuredVisuals[4];
+
   return (
     <section className="page-shell">
       <Reveal className="page-intro">
@@ -12,7 +15,12 @@ export default function ContactPage() {
           interest, and message that can be acted on.
         </p>
       </Reveal>
-      <LeadForm />
+      <div className="split-section">
+        <LeadForm />
+        <Reveal className="media-card page-media-slab" delay={100}>
+          <img src={visual.src} alt={visual.title} />
+        </Reveal>
+      </div>
     </section>
   );
 }
