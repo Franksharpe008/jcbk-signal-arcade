@@ -1,0 +1,10 @@
+{
+  "slug": "hiphop-scene",
+  "prompt": "Premium hip-hop visual world, futuristic city stage, performance silhouettes, speaker stacks, neon rain, cyan and deep blue with sharp magenta accents, cinematic, no text",
+  "seed": 3203,
+  "width": 960,
+  "height": 540,
+  "steps": 5,
+  "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/hiphop-scene.png",
+  "device": "mps"
+}

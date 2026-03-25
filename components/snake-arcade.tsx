@@ -386,6 +386,7 @@ export function SnakeArcade({ compact = false }: { compact?: boolean }) {
     () => (running ? (slowTicks > 0 ? "Slow-motion live" : "Live") : "Crashed - tap reset and push again"),
     [running, slowTicks]
   );
+  const slowRatio = Math.min(1, slowTicks / 42);
 
   const triggerDirection = async (next: Point) => {
     await unlockAudio();
@@ -425,6 +426,9 @@ export function SnakeArcade({ compact = false }: { compact?: boolean }) {
           <span>Best {best}</span>
           <span>{slowTicks > 0 ? `Slow ${slowTicks}` : "Power idle"}</span>
         </div>
+      </div>
+      <div className="snake-meter" aria-hidden="true">
+        <div className="snake-meter-fill" style={{ width: `${slowRatio * 100}%` }} />
       </div>
       <canvas
         ref={canvasRef}

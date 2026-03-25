@@ -1,0 +1,10 @@
+{
+  "slug": "jacob-logo-world",
+  "prompt": "Luxury futuristic logo world for Jacob Kocsis, abstract serpent signal emblem hovering above a glowing music core, premium glossy lighting, black background, cyan violet pink highlights, no text",
+  "seed": 3109,
+  "width": 960,
+  "height": 540,
+  "steps": 5,
+  "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/jacob-logo-world.png",
+  "device": "mps"
+}

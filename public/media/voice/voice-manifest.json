@@ -2,7 +2,9 @@
   {
     "slug": "intro-voice",
     "mp3": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/voice/intro-voice.mp3",
-    "text": "Welcome to Jacob Kocsis Signal Arcade. Five original one-minute songs. A brighter visual world. A playable gate. And a vault built to keep moving.",
-    "voice": "Eddy"
+    "source_wav": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/voice/intro-voice-v2.wav",
+    "voice_engine": "xtts",
+    "voice_reference": "/Users/franksharpe/SharpeAI/OpenClawVoice/voices/magnus-male-ref.wav",
+    "text": "Welcome to J C B K Signal Arcade. Five original one minute songs. Touch the gate. Feel the drop. Step inside and run the whole vault."
   }
 ]

@@ -1,0 +1,10 @@
+{
+  "slug": "hero-stage",
+  "prompt": "Premium futuristic music and gaming launch world for JCBK Signal Arcade, vivid neon stage, suspended light panels, premium arcade energy, music-reactive atmosphere, cyan magenta violet glow, cinematic, editorial, no text",
+  "seed": 3101,
+  "width": 960,
+  "height": 540,
+  "steps": 5,
+  "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/hero-stage.png",
+  "device": "mps"
+}

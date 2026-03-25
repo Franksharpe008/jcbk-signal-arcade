@@ -38,10 +38,10 @@ export function SplashGate() {
           <button className="primary-button" type="button" onClick={handleEnter}>
             Enter the site
           </button>
-          <span>Use touch, arrows, or WASD. Hit enter when you want the welcome and the vault.</span>
+          <span>Swipe on mobile or use arrows and WASD. Catch the cyan orb to trigger slow motion.</span>
         </div>
       </div>
-      <SnakeArcade compact />
+      <SnakeArcade />
     </div>
   );
 }

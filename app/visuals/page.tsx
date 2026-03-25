@@ -6,7 +6,7 @@ export default function VisualsPage() {
     <section className="page-shell">
       <Reveal className="page-intro">
         <p className="eyebrow">Visuals</p>
-        <h1>Video, generated stills, and animated surfaces keep the whole build alive.</h1>
+        <h1>Video, custom stills, and animated surfaces keep the whole build alive.</h1>
         <p>
           This route stacks the hero loop, branded motion passes, and the visual kit that gives the songs a stronger
           stage.

@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-03-25T06:35:44Z",
+  "total_seconds": 1283.16,
+  "device": "mps",
+  "width": 960,
+  "height": 540,
+  "steps": 5,
+  "images": [
+    {
+      "slug": "hero-stage",
+      "prompt": "Premium futuristic music and gaming launch world for JCBK Signal Arcade, vivid neon stage, suspended light panels, premium arcade energy, music-reactive atmosphere, cyan magenta violet glow, cinematic, editorial, no text",
+      "seed": 3101,
+      "width": 960,
+      "height": 540,
+      "steps": 5,
+      "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/hero-stage.png",
+      "device": "mps"
+    },
+    {
+      "slug": "jacob-logo-world",
+      "prompt": "Luxury futuristic logo world for Jacob Kocsis, abstract serpent signal emblem hovering above a glowing music core, premium glossy lighting, black background, cyan violet pink highlights, no text",
+      "seed": 3109,
+      "width": 960,
+      "height": 540,
+      "steps": 5,
+      "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/jacob-logo-world.png",
+      "device": "mps"
+    },
+    {
+      "slug": "hiphop-scene",
+      "prompt": "Premium hip-hop visual world, futuristic city stage, performance silhouettes, speaker stacks, neon rain, cyan and deep blue with sharp magenta accents, cinematic, no text",
+      "seed": 3203,
+      "width": 960,
+      "height": 540,
+      "steps": 5,
+      "output": "/Users/franksharpe/Documents/New project/jcbk-signal-arcade/public/media/fusion-revision/hiphop-scene.png",
+      "device": "mps"
+    }
+  ]
+}

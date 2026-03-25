@@ -34,8 +34,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <Link href="/" className="brand-mark" aria-label={siteName}>
           <span className="brand-glyph" />
           <span className="brand-copy">
-            <strong>Jacob</strong>
-            <em>Signal Arcade</em>
+            <strong>JCBK</strong>
+            <em>Jacob Kocsis</em>
           </span>
         </Link>
         <NavLinks />
@@ -48,10 +48,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="site-footer-grid">
           <div className="footer-lead">
             <p className="eyebrow">Close strong</p>
-            <h2>The site is the trailer. Jacob&apos;s songs are the proof.</h2>
+            <h2>The site is the trailer. The songs and the gate are the proof.</h2>
             <p>
-              Move through the arcade gate, play the five-track vault, or send a note if you want a brighter custom
-              world built around your own release.
+              Cross the gate, hear the five-track vault, or send a note if you want a brighter release world built
+              around your own drop.
             </p>
           </div>
           <div className="site-footer-media media-card">

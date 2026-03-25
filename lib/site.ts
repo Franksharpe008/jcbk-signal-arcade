@@ -39,7 +39,7 @@ export type Visual = {
   type: "video" | "image";
 };
 
-export const siteName = "Jacob Kocsis Signal Arcade";
+export const siteName = "JCBK Signal Arcade";
 
 export const navItems: NavItem[] = [
   { href: "/", label: "Home" },
@@ -53,16 +53,16 @@ export const navItems: NavItem[] = [
 
 export const heroMetrics: Metric[] = [
   { label: "Original tracks", value: "5 x 60-second drops" },
-  { label: "Entry ritual", value: "Playable touch-ready arcade gate" },
+  { label: "Entry ritual", value: "Playable mobile arcade gate" },
   { label: "Capture path", value: "Live interest + download funnel" }
 ];
 
 export const introTracks: AudioTrack[] = [
   {
     id: "intro-voice",
-    label: "Jacob welcome",
+    label: "JCBK welcome",
     src: "/media/voice/intro-voice.mp3",
-    description: "A brighter voice welcome that frames the whole experience before the first song hits."
+    description: "A brighter voice welcome that frames the vault before the first drop hits."
   },
   {
     id: "site-mix",
@@ -164,7 +164,7 @@ export const featuredVisuals: Visual[] = [
     title: "Arcade surge",
     summary: "A fresh serpent-and-console motion pass for the arcade and track routes.",
     src: "/media/derived/serpent-rise.mp4",
-    poster: "/media/fusion/arcade-serpent.png",
+    poster: "/media/fusion-revision/hiphop-scene.png",
     type: "video"
   },
   {
@@ -172,7 +172,7 @@ export const featuredVisuals: Visual[] = [
     title: "Signal orbit",
     summary: "A slow orbit around the new mark for premium pause moments and the footer close.",
     src: "/media/derived/logo-orbit.mp4",
-    poster: "/media/fusion/logo-mark.png",
+    poster: "/media/fusion-revision/jacob-logo-world.png",
     type: "video"
   },
   {
@@ -180,21 +180,21 @@ export const featuredVisuals: Visual[] = [
     title: "Pulse tunnel",
     summary: "A luminous gaming-and-music tunnel pass for the visuals and downloads routes.",
     src: "/media/derived/portal-drift.mp4",
-    poster: "/media/fusion/frequency-portal.png",
+    poster: "/media/fusion-revision/eighties-scene.png",
     type: "video"
   },
   {
-    id: "voltage-stage",
-    title: "Voltage stage",
-    summary: "A fresh still built for the experience and contact routes.",
-    src: "/media/fusion/night-stage.png",
+    id: "hiphop-scene",
+    title: "Night signal stage",
+    summary: "A fresh custom stage built for the contact route and the first visible still layer.",
+    src: "/media/fusion-revision/hiphop-scene.png",
     type: "image"
   },
   {
-    id: "control-room",
-    title: "Control room",
-    summary: "A fresh still built around Jacob's brighter command booth and release vibe.",
-    src: "/media/fusion/control-room.png",
+    id: "signal-emblem",
+    title: "Signal emblem",
+    summary: "A fresh custom emblem pass built for the brand mark, footer orbit, and premium pause moments.",
+    src: "/media/fusion-revision/jacob-logo-world.png",
     type: "image"
   }
 ];
